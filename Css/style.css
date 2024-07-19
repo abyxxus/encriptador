@@ -1,0 +1,38 @@
+.logo {
+    width: 6%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.textarea-wrapper {
+    margin-right: 10px; /* Espacio entre las áreas de texto */ 
+}
+
+textarea{
+    border-style: none;
+    text-decoration: none;
+    list-style: square;
+    color: black; 
+    padding-left: 10px; 
+    padding-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.writer{
+    background-color: blanchedalmond;
+    border-radius: 15px;
+}
+
+button{
+    font-style: italic;
+    border: none;
+    background-color: blue;
+}
+
+button:disabled{
+    background-color: darkgrey;
+}

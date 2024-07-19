@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="img/lio mini.png" alt="logo_arlex" class="logo">
+    </header>
+    <div class="container">
+        <div class="textarea-wrapper">
+            <textarea placeholder="Texto 1" id="textarea1" class="text" cols="50%" rows="25%"></textarea>
+            <br>
+
+            <center>
+                <button type="button" onclick="processtext()">Encriptador</button>
+                <button type="button" onclick="reverseText()">Desencriptar</button>
+            </center>
+            
+        </div>
+
+        <div class="textarea-wrapper" >
+            <textarea placeholder="Texto 2" id="textarea2" class="writer" cols="50%" rows="30%" readonly></textarea>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
