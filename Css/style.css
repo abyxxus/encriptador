@@ -1,38 +1,102 @@
-.logo {
-    width: 6%;
-    margin-top: 10px;
-    margin-left: 10px;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #F3F5FC;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-}
-.textarea-wrapper {
-    margin-right: 10px; /* Espacio entre las áreas de texto */ 
+a{
+    text-decoration: none;
 }
 
 textarea{
+    resize: none;
     border-style: none;
+    border-radius: 32px;
     text-decoration: none;
-    list-style: square;
-    color: black; 
-    padding-left: 10px; 
+    padding-left: 20px; 
     padding-top: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.writer{
-    background-color: blanchedalmond;
-    border-radius: 15px;
-}
-
 button{
     font-style: italic;
-    border: none;
-    background-color: blue;
+    font-size: large;
+    text-align: center;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #110E7F;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #110E7F;
+    color: #F3F5FC;
 }
 
 button:disabled{
-    background-color: darkgrey;
+    background-color: #F3F5FC;
+    color: #110E7F;
+}
+
+footer{
+    
+    display: flex;
+}
+
+p{
+    text-align: justify;
+    text-justify: inherit;
+    padding-top: 65px;
+}
+
+.logo {
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.logo_arlex{
+    height: 80PX;
+    margin: 40px;
+    
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+}
+.textarea-wrapper {
+    justify-content: right;
+    margin-right: 3%; /* Espacio entre las áreas de texto */ 
+}
+
+.text{
+    background-color:#F3F5FC ;
+}
+
+.text::placeholder{
+    color: #110E7F;
+    font-size: large;
+}
+
+.writer{
+    background-color: white;
+    justify-content: center;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        display: inline;
+    }
+    .textarea-wrapper {
+        width: 48%;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

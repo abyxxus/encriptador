@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/style.css">
-    
-    <title>Encriptador de texto</title>
-</head>
-<body>
-    <header>
-        <img src="img/lio mini.png" alt="logo_arlex" class="logo">
-    </header>
-    <div class="container">
-        <div class="textarea-wrapper">
-            <textarea placeholder="Texto 1" id="textarea1" class="text" cols="50%" rows="25%"></textarea>
-            <br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="Css/style.css"/>
+        <title>Encriptador de texto</title>
+    </head>
+    <body>
+        <header>
+            <a href="https://www.aluracursos.com">
+                <img src="img/logo.png" alt="logo_arula" class="logo"/>
+            </a>
+        </header>
+        <div class="container">
+            <div class="textarea-wrapper">
+                <textarea placeholder="⚠ Solo letras minúsculas, sin acentos. 
+                Se permiten puntuación y guiones." id="textarea1" class="text" cols="80%" rows="27%"></textarea>
+                <br>
 
-            <center>
-                <button type="button" onclick="processtext()">Encriptador</button>
-                <button type="button" onclick="reverseText()">Desencriptar</button>
-            </center>
-            
-        </div>
+                <center>
+                    <button type="button" onclick="processtext()">
+                        Encriptador
+                    </button>
+                    <button type="button" id="desencriptar" onclick="reverseText()" disabled>
+                        Desencriptar
+                    </button>
+                </center>
+                
+            </div>
 
-        <div class="textarea-wrapper" >
-            <textarea placeholder="Texto 2" id="textarea2" class="writer" cols="50%" rows="30%" readonly></textarea>
+            <div class="textarea-wrapper" >
+                <textarea placeholder="texto no encontrados" id="textarea2" class="writer" cols="50%" rows="30%" readonly disabled></textarea>
+            </div>
         </div>
-    </div>
-    <script src="js/script.js"></script>
-</body>
+        <footer>
+            <a href="https://www.linkedin.com/in/arlex-julian-cifuentes-ovalle/">
+                <img src="img/lio mini.png" alt="logo_arlex" class="logo_arlex"/>
+            </a>
+            <p>
+                creado por Arlex Julian Cifuentes Ovalle (abyxxus)
+            </p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
 </html>

@@ -1,7 +1,9 @@
 function processtext(){
+
     // Obtener el texto de la primera textarea
     const text = document.getElementById('textarea1').value;
-
+    
+    document.getElementById('desencriptar').removeAttribute('disabled');
     // muestra el texto obtenido en consola
     console.log(text);
 
