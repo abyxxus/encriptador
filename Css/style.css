@@ -1,3 +1,4 @@
+/* seccion de estilos generales */
 *{
     margin: 0px;
     padding: 0px;
@@ -49,6 +50,8 @@ p{
     padding-top: 65px;
 }
 
+/* estilos por clases */
+
 .logo {
     width: 120px;
     height: 48px;
@@ -86,6 +89,8 @@ p{
     background-color: white;
     justify-content: center;
 }
+
+/* parte de ajustes para diferentes dispositivos */
 
 @media (max-width: 1100px) {
     .container {
